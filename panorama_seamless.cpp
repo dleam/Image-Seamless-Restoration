@@ -260,26 +260,6 @@ int main() {
         if (comp.at<Vec3b>(row, col).val[2] < 130) {
           comp.at<Vec3b>(row, col).val[2] = 150;
         }
-        /*	else if (comp.at<Vec3b>(row, col).val[2] < 40 &&
-           comp.at<Vec3b>(row, col).val[2] >= 20) {
-                        comp.at<Vec3b>(row, col).val[2] += 100;
-                }
-                else if (comp.at<Vec3b>(row, col).val[2] < 60  &&
-           comp.at<Vec3b>(row, col).val[2] >= 40) {
-                        comp.at<Vec3b>(row, col).val[2] += 75;
-                }
-                else if (comp.at<Vec3b>(row, col).val[2] < 80 &&
-           comp.at<Vec3b>(row, col).val[2] >= 60) {
-                        comp.at<Vec3b>(row, col).val[2] += 50;
-                }
-                else if (comp.at<Vec3b>(row, col).val[2] < 100 &&
-           comp.at<Vec3b>(row, col).val[2] >= 80) {
-                        comp.at<Vec3b>(row, col).val[2] += 25;
-                }
-                else {
-                        comp.at<Vec3b>(row, col).val[2] += 0;
-
-                }*/
       }
     }
     cvtColor(comp, comp, CV_HSV2BGR);
