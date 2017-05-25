@@ -237,7 +237,7 @@ int main() {
     poly[0][2] = Point(0 + rectSelect.width, 0 + rectSelect.height);
     poly[0][3] = Point(0, 0 + rectSelect.height);
     const Point *polygons[1] = {poly[0]}; //常指针指向数组起始点
-    int num_points[] = {4};
+    int num_pOoints[] = {4};
     fillPoly(src_mask, polygons, num_points, 1, Scalar(255, 255, 255));
     seamlessClone(matChange2, matInit, src_mask, center, output0, NORMAL_CLONE);
     namedWindow("only poisson", CV_WINDOW_NORMAL);
