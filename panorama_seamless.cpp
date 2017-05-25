@@ -208,7 +208,7 @@ int main() {
       cv::waitKey(1);
     }
 
-    //简单的覆盖
+    // direct cover
     /*matSrc = cv::imread("D:/project/opencv/vs/test/image/result.jpg");
     Mat imageROI = matSrc(rectSelect);
     imwrite("D:/project/opencv/vs/test/image/roi2.jpg", matChange2);
@@ -223,7 +223,7 @@ int main() {
     /*cv::imshow(windowName, matSrc);
     cv::waitKey(2000);*/
 
-    //泊松
+    // Poisson
     matInit = cv::imread("D:/project/opencv/vs/test/image/result.jpg");
     cv::Mat output0, output;
     Point center;
@@ -243,8 +243,8 @@ int main() {
     namedWindow("only poisson", CV_WINDOW_NORMAL);
     imshow("only poisson", output0);
     imwrite("D:/project/opencv/vs/test/image/only_poisson.jpg", output0);
-    //泊松后色差调整
 
+    // color adjustment
     Rect rectChange;
     rectChange.x = rectSelect.x - 0.1 * rectSelect.width;
     rectChange.y = rectSelect.y - 0.1 * rectSelect.height;
