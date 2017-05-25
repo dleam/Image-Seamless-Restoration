@@ -1,6 +1,6 @@
 # Image-Seamless-Restoration
 
-Using the technique "Poisson Image Editing" to restore the pictures.（especially for panoramic~）
+Using the technique "Poisson Image Editing" to restore the pictures.（Especially for panorama image~）
 
 
 Simpler and faster "PS" ~
